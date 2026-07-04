@@ -14,22 +14,22 @@
         }
 
         :root {
-            --primary: #3b82f6;
-            --primary-light: #60a5fa;
+            --primary: #d97706;
+            --primary-light: #fcd34d;
             --secondary: #10b981;
-            --accent: #f59e0b;
-            --bg-base: #0f172a;
-            --bg-surface: rgba(30, 41, 59, 0.7);
+            --accent: #fbbf24;
+            --bg-base: #1a1412;
+            --bg-surface: rgba(38, 28, 24, 0.7);
             --card-bg: rgba(255, 255, 255, 0.03);
             --card-border: rgba(255, 255, 255, 0.08);
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --glow: 0 0 20px rgba(59, 130, 246, 0.5);
+            --text-primary: #faf9f6;
+            --text-secondary: #a8a29e;
+            --glow: 0 0 20px rgba(217, 119, 6, 0.5);
         }
 
         body {
             font-family: 'Outfit', sans-serif;
-            background: radial-gradient(circle at top right, #1e1b4b, var(--bg-base) 40%, #020617);
+            background: radial-gradient(circle at top right, #2d1a11, var(--bg-base) 40%, #0c0908);
             min-height: 100vh;
             color: var(--text-primary);
             overflow-x: hidden;
@@ -43,7 +43,7 @@
             width: 50vw;
             height: 50vw;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(217, 119, 6, 0.15) 0%, transparent 70%);
             z-index: -1;
             filter: blur(60px);
         }
@@ -54,14 +54,14 @@
             width: 40vw;
             height: 40vw;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
             z-index: -1;
             filter: blur(60px);
         }
 
         /* Header / Navbar */
         .navbar {
-            background: rgba(15, 23, 42, 0.6);
+            background: rgba(26, 20, 18, 0.6);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--card-border);
@@ -81,7 +81,7 @@
             font-size: 1.5rem;
             font-weight: 800;
             letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+            background: linear-gradient(135deg, #fcd34d 0%, #d97706 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -89,7 +89,7 @@
 
         .logo-icon {
             font-size: 2rem;
-            filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.6));
+            filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
         }
 
         .nav-links {
@@ -117,10 +117,10 @@
         }
 
         .nav-btn.active {
-            background: rgba(59, 130, 246, 0.15);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background: rgba(217, 119, 6, 0.15);
+            border: 1px solid rgba(217, 119, 6, 0.3);
             color: var(--primary-light);
-            box-shadow: inset 0 0 10px rgba(59, 130, 246, 0.1);
+            box-shadow: inset 0 0 10px rgba(217, 119, 6, 0.1);
         }
 
         /* Main Content */
@@ -150,7 +150,7 @@
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 4px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+            background: linear-gradient(90deg, #d97706, #fbbf24, #d97706);
             background-size: 200% auto;
             animation: gradientShift 4s linear infinite;
         }
@@ -393,11 +393,11 @@
         }
 
         .message.user {
-            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #b45309 0%, #d97706 100%);
             color: white;
             align-self: flex-end;
             border-bottom-right-radius: 4px;
-            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.4);
         }
 
         .message.ai {
@@ -434,12 +434,12 @@
             outline: none;
             border-color: var(--primary-light);
             background: rgba(0, 0, 0, 0.4);
-            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+            box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.15);
         }
 
         .send-btn {
             padding: 0 2rem;
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, #d97706 0%, #fbbf24 100%);
             color: white;
             border: none;
             border-radius: 16px;
@@ -455,7 +455,7 @@
 
         .send-btn:hover:not(:disabled) {
             transform: scale(1.03);
-            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.5);
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.5);
         }
 
         .send-btn:disabled {
@@ -495,7 +495,7 @@
 
         /* Footer */
         .footer {
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(26, 20, 18, 0.8);
             border-top: 1px solid var(--card-border);
             padding: 3rem;
             text-align: center;
@@ -576,6 +576,8 @@
             <button class="nav-btn" onclick="showTab('community')">Community</button>
             <button class="nav-btn" onclick="showTab('safety')">Safety</button>
             <button class="nav-btn" onclick="showTab('healthcare')">Healthcare</button>
+            <button class="nav-btn" onclick="showTab('environment')">Environment</button>
+            <button class="nav-btn" onclick="showTab('education')">Education</button>
             <button class="nav-btn" onclick="showTab('ai')">✨ AI Assistant</button>
         </div>
     </nav>
@@ -585,7 +587,7 @@
         <div id="dashboard" class="dashboard">
             <div class="dashboard-header">
                 <h1>AI for Better Living & Smarter Communities</h1>
-                <p>An intelligent Decision Intelligence Platform transforming urban living with Google Gen AI, providing real-time insights and predictive analytics.</p>
+                <p>An AI-powered Decision Intelligence Platform leveraging Google Gen AI to help communities analyze data, predict outcomes, and make smarter decisions that improve everyday life and well-being.</p>
             </div>
 
             <div class="stats-grid">
@@ -629,12 +631,12 @@
                 <div class="content-section">
                     <h2>🎯 Platform Features</h2>
                     <div class="card mb-4">
-                        <h3>✨ Google Gemini Assistant</h3>
-                        <p>Powered by advanced LLMs to answer anything about your local community instantly.</p>
+                        <h3>✨ Natural Language Interface</h3>
+                        <p>Ask questions in natural language to identify patterns, generate recommendations, and support decision-making.</p>
                     </div>
                     <div class="card">
-                        <h3>📊 Real-time Decision Analytics</h3>
-                        <p>Monitor core metrics to optimize city resources and make data-driven policy decisions.</p>
+                        <h3>📊 Intelligent Automation</h3>
+                        <p>Leverage multimodal AI to predict outcomes and optimize city resources like healthcare, safety, and transit.</p>
                     </div>
                 </div>
             </div>
@@ -797,6 +799,90 @@
                             <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem; font-size: 0.85rem;"><span>General Bed Capacity</span><span>55%</span></div>
                             <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px;"><div style="width: 55%; height: 100%; background: #60a5fa; border-radius: 3px;"></div></div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environment -->
+        <div id="environment" class="dashboard hidden">
+            <div class="dashboard-header">
+                <h1>🌱 Environment & Energy</h1>
+                <p>Monitor environmental sustainability, climate resilience, and energy efficiency across the city.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: #34d399; background: rgba(52, 211, 153, 0.1); border-color: rgba(52,211,153,0.2)">♻️</div>
+                    <div class="stat-value">72%</div>
+                    <div class="stat-label">Recycling Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: #60a5fa; background: rgba(96, 165, 250, 0.1); border-color: rgba(96,165,250,0.2)">💧</div>
+                    <div class="stat-value">Good</div>
+                    <div class="stat-label">Water Quality</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: #fbbf24; background: rgba(251, 191, 36, 0.1); border-color: rgba(251,191,36,0.2)">⚡</div>
+                    <div class="stat-value">-15%</div>
+                    <div class="stat-label">Energy Usage</div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>🌍 Sustainability Initiatives</h2>
+                <div class="grid-2">
+                    <div class="card mb-4">
+                        <h3>Smart Grid Optimization</h3>
+                        <p><strong>Status:</strong> <span class="badge badge-good">Active</span></p>
+                        <p style="margin-top: 0.5rem">AI-driven load balancing has reduced peak hour energy consumption by 15% across municipal buildings.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Waste Management</h3>
+                        <p><strong>Status:</strong> <span class="badge badge-good">Route Optimized</span></p>
+                        <p style="margin-top: 0.5rem">Smart bins reporting fill levels have reduced collection truck emissions by 20% this month.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="dashboard hidden">
+            <div class="dashboard-header">
+                <h1>📚 Education & Lifelong Learning</h1>
+                <p>Empowering citizens with inclusive learning programs, skill development, and educational resources.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: #a78bfa; background: rgba(167, 139, 250, 0.1); border-color: rgba(167,139,250,0.2)">🎓</div>
+                    <div class="stat-value">12.5K</div>
+                    <div class="stat-label">Active Learners</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: #f472b6; background: rgba(244, 114, 182, 0.1); border-color: rgba(244,114,182,0.2)">🏫</div>
+                    <div class="stat-value">124</div>
+                    <div class="stat-label">Institutions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="color: #38bdf8; background: rgba(56, 189, 248, 0.1); border-color: rgba(56,189,248,0.2)">💻</div>
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label">Digital Access</div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>📖 Learning Programs</h2>
+                <div class="grid-2">
+                    <div class="card mb-4">
+                        <h3>Digital Literacy Campaign</h3>
+                        <p><strong>Focus:</strong> Inclusive Communities</p>
+                        <p style="margin-top: 0.5rem">Providing free tablets and internet access to low-income households for equitable education access.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Future Skills Workshop</h3>
+                        <p><strong>Focus:</strong> Economic Development</p>
+                        <p style="margin-top: 0.5rem">Reskilling programs in AI and data science for adults, boosting local workforce readiness.</p>
                     </div>
                 </div>
             </div>
