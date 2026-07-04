@@ -88,9 +88,8 @@ http://localhost:3000
 ```
 H2S project/
 ├── google-genai-server.js     # Main server with Google AI
-├── index-genai.html          # Advanced frontend (competition version)
+├── index.html                # Premium Dashboard frontend
 ├── simple-server.js          # Simple Groq version
-├── index.html                # Basic version
 ├── package.json              # Dependencies
 ├── START_GOOGLE_GENAI.bat    # Quick start (Windows)
 ├── START.bat                 # Basic quick start

@@ -146,11 +146,11 @@ app.get('/api/predictions', (req, res) => res.json(communityData.predictions));
 
 // --- Main Route ---
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index-genai.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/index-genai.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index-genai.html'));
+app.get('/index.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // --- Start Server ---
